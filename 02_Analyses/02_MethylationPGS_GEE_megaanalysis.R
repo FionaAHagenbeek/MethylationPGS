@@ -1,6 +1,6 @@
 ################################################################################
 #
-# project: Direct & Indirect Genetic Effects On Buccal DNA Methylation levels
+# project: Direct & Indirect Genetic Effects On Buccal DNA Methylation Levels
 #
 # script: Run GEE analyses combined for all traits across all three cohorts
 # (i.e., mega-analysis)
@@ -63,7 +63,7 @@ geemodel <- function(dat, CpG) {
                               Fath_P_inf_SCORE_Height_MRG16_LDp1 + Fath_P_inf_SCORE_BMI_MRG16_LDp1 + 
                               Fath_P_inf_SCORE_Smoking_SmokingInitiation_MRG16_LDp1 + Fath_P_inf_SCORE_Schizophrenia_MRG16_LDp1 + 
                               Fath_P_inf_SCORE_EducationalAttainment_MRG16_LDp1 + Fath_P_inf_SCORE_SocialDeprivation_MRG16_LDp1 + 
-                              datasetdummy2")),
+                              datasetdummy1 + datasetdummy2")),
          data=dat, id=FamilyNumber, family=gaussian, corstr="independence", maxiter=500, na.action=na.omit,silent=TRUE)
   # extract output
   coeff <- summary(r1)$coefficients
@@ -84,7 +84,7 @@ extract.coeffs <- function(model.output,CpG,dat) {
   # rename the columns to reflect the covariate it was obtained for
   names(Beta) <- c(paste0(row.names(model.output[[1]]),"_beta"))
   
-  # create a list, were each list contains a vector of se's for each of the
+  # create a list, where each list contains a vector of se's for each of the
   # tested covariates/covariate levels
   SE <- foreach(i=1:nrow(model.output[[1]])) %dopar% {
     c(unlist(lapply(model.output, function(x) { x[i,4] })))
