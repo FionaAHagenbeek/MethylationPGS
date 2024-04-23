@@ -1,5 +1,14 @@
 # Intergenerational transmission of complex traits on the offspring methylome
-Analysis scripts for the project "Intergenerational transmission of complex traits on the offspring methylome". The preprint for this project will be uploaded soon. 
+Analysis scripts for the project "Intergenerational transmission of complex traits on the offspring methylome".
+
+### Citation
+Hagenbeek FA, et al. Intergenerational transmission of complex traits on the offspring methylome. [medRxiv](https://doi.org/10.1101/2024.04.15.24305824)
+
+### Dependencies  
+These scripts assume you have R v4.2.2 or higher installed. Required R packages: foreign, tidyverse/dplyr, foreach, doParallel, remotes, ewaff, RColorBrewer, plyr, ggplot2, reshape2, corrplot, gee, data.table, qqman, ggvenn, and cowplot.  
+
+### Contact
+Please contact Fiona Hagenbeek (fiona.hagenbeek@helsinki.fi) if you have any questions.
 
 # 1. Data Preparation
 The pipeline for DNA methylation–array analysis developed by the Biobank-based Integrative Omics Study (BIOS) consortium is available at [https://molepi.github.io/DNAmArray_workflow/](https://molepi.github.io/DNAmArray_workflow/).  
