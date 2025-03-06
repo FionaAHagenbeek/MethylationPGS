@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/783245525.svg)](https://doi.org/10.5281/zenodo.14960967)
 # Intergenerational transmission of complex traits on the offspring methylome
 Analysis scripts for the project "Intergenerational transmission of complex traits on the offspring methylome".
 
