@@ -3,7 +3,7 @@
 Analysis scripts for the project "Intergenerational transmission of complex traits on the offspring methylome".
 
 ### Citation
-Hagenbeek FA, et al. Intergenerational transmission of complex traits on the offspring methylome. [medRxiv](https://doi.org/10.1101/2024.04.15.24305824)
+Hagenbeek, F.A., Pool, R., Van Asselt, A.J. et al. Intergenerational transmission of complex traits and the offspring methylome. Mol Psychiatry (2025). [https://doi.org/10.1038/s41380-025-02981-7](https://doi.org/10.1038/s41380-025-02981-7)
 
 ### Dependencies  
 These scripts assume you have R v4.2.2 or higher installed. Required R packages: foreign, tidyverse/dplyr, foreach, doParallel, remotes, ewaff, RColorBrewer, plyr, ggplot2, reshape2, corrplot, gee, data.table, qqman, ggvenn, MASS, psych, lavaan, and cowplot.  
